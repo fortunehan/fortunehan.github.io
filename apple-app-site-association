@@ -1,0 +1,98 @@
+
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "582UTB8G9R.com.sc.breezecdi",
+                "paths": [
+                    "/cdi/scmob/*"
+                ]
+            },
+            {
+                "appID": "582UTB8G9R.com.sc.breezeug",
+                "paths": [
+                    "/ug/scmob/*"
+                ]
+            },
+            {
+                "appID": "582UTB8G9R.com.sc.breezeke",
+                "paths": [
+                    "/ke/scmob/*"
+                ]
+            },
+            {
+                "appID": "582UTB8G9R.com.sc.breezeghana.banking",
+                "paths": [
+                    "/gh/scmob/*"
+                ]
+            },
+            {
+                "appID": "582UTB8G9R.com.sc.breezenigeria.banking",
+                "paths": [
+                    "/ng/scmob/*"
+                ]
+            },
+            {
+                "appID": "582UTB8G9R.com.sc.breezezw",
+                "paths": [
+                    "/zw/scmob/*"
+                ]
+            },
+            {
+                "appID": "582UTB8G9R.com.sc.breezezm",
+                "paths": [
+                    "/zm/scmob/*"
+                ]
+            },
+            {
+                "appID": "582UTB8G9R.com.sc.breezetz",
+                "paths": [
+                    "/tz/scmob/*"
+                ]
+            },
+            {
+                "appID": "582UTB8G9R.com.sc.breezebw",
+                "paths": [
+                    "/bw/scmob/*"
+                ]
+            },
+            {
+                "appID": "B3UTV3P674.com.sc.Breeze",
+                "paths": [
+                    "/sg/scmob/*"
+                ]
+            },
+            {
+                "appID": "VAD63SBLFT.com.sc.breezehk",
+                "paths": [
+                    "/hk/scmob/*"
+                ]
+            },
+            {
+                "appID": "582UTB8G9R.com.sc.breezein.banking",
+                "paths": [
+                    "/in/scmob/*"
+                ]
+            },
+            {
+                "appID": "582UTB8G9R.com.sc.breezeuae.banking",
+                "paths": [
+                    "/ae/scmob/*"
+                ]
+            },
+            {
+                "appID": "R66T69TZKP.com.sc.BreezeMY",
+                "paths": [
+                    "/my/scmob/*"
+                ]
+            },
+            {
+                "appID": "582UTB8G9R.com.sc.breezecn.banking",
+                "paths": [
+                    "/cn/scmob/*"
+                ]
+            }
+        ]
+    }
+}
