@@ -1,63 +1,49 @@
-<!--
- * @Author: your name
- * @Date: 2021-04-14 06:01:37
- * @LastEditTime: 2021-06-20 12:40:32
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: /
- ][*0/-2`1=1`0  q +Xfortunehan.github.io/index.html
--->
-222222222212222222222222222222222222222222222222222.
-
-
-
-
-
-
-
-
-oo<!--
- * @Author: your name
- * @Date: 2021-04-14 06:01:37
- * @LastEditTime: 2021-04-14 07:15:13
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: /minimal-blog/Users/flynnhan/Downloads/test_geo.html
--->
 <!DOCTYPE html>
 <html>
 <body>
 
-<p>Click the button to get your c==1aaaardinates.</p>
+<!-- <p>Click the button to get your c==1aaaardinates.</p>
 
-<button onclick="getLocation()">Try It</button>
+<button onclick="getLocation()">Try It</button> -->
 
-<p id="demo"></p>
+<!-- <p id="demo"></p> -->
+<span>access_token: </span> <span id="access_token"> </span>
+<span>refresh_token: </span> <span id="refresh_token"> </span>
 
 <script>
-var x = document.getElementById("demo");
+  window.onload = f;
+  function f(){
+    var access_token = sessionStorage.getItem("access_token");
+    var refresh_token = sessionStorage.getItem("refresh_token");
 
-function getLocation() {
-  alert(navigator.geolocation)
-  if (navigator.geolocation) {
-    try{
-      navigator.geolocation.getCurrentPosition(showPosition);
-    } catch(e){
-      alert(e)
-      console.dir(e)
-    }
-    
-  } else { 
-    alert("Geolocation is not supported by this browser.");
-    x.innerHTML = "Geolocation is not supported by this browser.";
+    document.getElementById("access_token").textContent = access_token;
+    document.getElementById("refresh_token").textContent = refresh_token;
   }
-}
 
-function showPosition(position) {
-  alert("Latitude: " + position.coords.latitude + ",Longitude: "+ position.coords.longitude)
-  x.innerHTML = "Latitude: " + position.coords.latitude + 
-  "<br>Longitude: " + position.coords.longitude;
-}
+
+// var x = document.getElementById("demo");
+
+// function getLocation() {
+//   alert(navigator.geolocation)
+//   if (navigator.geolocation) {
+//     try{
+//       navigator.geolocation.getCurrentPosition(showPosition);
+//     } catch(e){
+//       alert(e)
+//       console.dir(e)
+//     }
+    
+//   } else { 
+//     alert("Geolocation is not supported by this browser.");
+//     x.innerHTML = "Geolocation is not supported by this browser.";
+//   }
+// }
+
+// function showPosition(position) {
+//   alert("Latitude: " + position.coords.latitude + ",Longitude: "+ position.coords.longitude)
+//   x.innerHTML = "Latitude: " + position.coords.latitude + 
+//   "<br>Longitude: " + position.coords.longitude;
+// }
 </script>
 
 </body>
