@@ -32,11 +32,17 @@
     var refresh_token = sessionStorage.getItem("refresh_token");
 
     document.getElementById("access_token").textContent = access_token;
-    document.getElementById("refresh_token").textContent = refresh_token;
+    
 
     document.getElementById('test22').textContent = 'yoyo';
   
   }
+
+  window.addEventListener("message", (event) => {
+    document.getElementById("refresh_token").textContent = event.data;
+
+  // ...
+}
 
 
 // var x = document.getElementById("demo");
