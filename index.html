@@ -15,6 +15,7 @@
 <br/>
 <span>access_token: </span> <span id="access_token"> </span>
 <span>refresh_token: </span> <span id="refresh_token"> </span>
+<span>tt_token: </span> <span id="tt_token"> </span>
 
 <br/>
 <br/>
@@ -24,9 +25,16 @@
 <br/>
 <span>test: </span> <span id="test"> </span>
 <span>test44: </span> <span id="test22"> </span>
+<br/>
+<br/>
+<button onclick="fa">dd</button>
 
 <script>
   window.onload = f;
+  function fa(){
+    sessionStorage.setItem("tt_token") = "aa";
+    document.getElementById('tt_token').textContent = window.sessionStorage.getItem('tt_token');
+  }
   function f(){
     var access_token = sessionStorage.getItem("access_token");
     var refresh_token = sessionStorage.getItem("refresh_token");
