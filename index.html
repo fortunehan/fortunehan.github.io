@@ -55,8 +55,10 @@
     document.getElementById("refresh_token").textContent = event.data;
   });
 
-  window.addEventListener("storage", (e) =>
-  document.getElementById("access_token").textContent = window.sessionStorage.getItem('access_token')
+  window.addEventListener("storage", (e) => {
+    document.getElementById('test22').textContent = 'yeye';
+    alert(2);
+  document.getElementById("access_token").textContent = window.sessionStorage.getItem('access_token')}
     );
 
   // ...
