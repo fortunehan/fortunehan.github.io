@@ -43,6 +43,10 @@
     document.getElementById("refresh_token").textContent = event.data;
   });
 
+  window.addEventListener("storage", e =>
+  document.getElementById("access_token").textContent = access_token
+    );
+
   // ...
 
 
