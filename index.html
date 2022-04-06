@@ -23,7 +23,7 @@
 <br/>
 <br/>
 <span>test: </span> <span id="test"> </span>
-<span>test33: </span> <span id="test22"> </span>
+<span>test44: </span> <span id="test22"> </span>
 
 <script>
   window.onload = f;
@@ -44,7 +44,7 @@
   });
 
   window.addEventListener("storage", e =>
-  document.getElementById("access_token").textContent = access_token
+  document.getElementById("access_token").textContent = window.sessionStorage.getItem('access_token')
     );
 
   // ...
