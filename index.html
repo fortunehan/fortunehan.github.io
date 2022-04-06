@@ -47,7 +47,7 @@
   }
 
   setTimeout(()=>
-    document.getElementById("refresh_token").textContent = window.sessionStorage.getItem('refresh_token')
+    document.getElementById("tt_token").textContent = window.sessionStorage.getItem('refresh_token')
   ,3000)
 
   window.addEventListener("message", (event) => {
