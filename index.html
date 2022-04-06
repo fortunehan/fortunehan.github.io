@@ -1,93 +1,58 @@
 <!DOCTYPE html>
 <html>
+
 <body>
 
-<!-- <p>Click the button to get your c==1aaaardinates.</p>
+  <!-- <p>Click the button to get your c==1aaaardinates.</p>
 
 <button onclick="getLocation()">Try It</button> -->
 
-<!-- <p id="demo"></p> -->
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<span>access_token: </span> <span id="access_token"> </span>
-<span>refresh_token: </span> <span id="refresh_token"> </span>
-<span>tt_token: </span> <span id="tt_token"> </span>
+  <!-- <p id="demo"></p> -->
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <span>access_token: </span> <span id="access_token"> </span>
+  <span>refresh_token: </span> <span id="refresh_token"> </span>
+  <span>tt_token: </span> <span id="tt_token"> </span>
 
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<span>test: </span> <span id="test"> </span>
-<span>test65: </span> <span id="test22"> </span>
-<br/>
-<br/>
-<button onclick="fa()">dd</button>
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <span>test: </span> <span id="test"> </span>
+  <span>test66: </span> <span id="test22"> </span>
+  <br />
+  <br />
+  <button onclick="setToken()">set access_token</button>
 
-<script>
-  window.onload = f;
-  function fa(){
-    window.sessionStorage.setItem("tt_token") = "aa";
-    document.getElementById('tt_token').textContent = window.sessionStorage.getItem('tt_token');
-  }
-  function f(){
-    var access_token = window.sessionStorage.getItem("access_token");
-    var refresh_token = window.sessionStorage.getItem("refresh_token");
+  <script>
+    function setToken() {
+      window.sessionStorage.setItem("access_token", "access token aaa");
+      window.dispatchEvent(new Event('storage'));
+      // document.getElementById('tt_token').textContent = window.sessionStorage.getItem('tt_token');
+    }
 
-    document.getElementById("access_token").textContent = access_token;
-    
+    // setTimeout(()=>{window.sessionStorage.setItem('access_token', 'access_token11111111');window.sessionStorage.setItem('refresh_token', 'refresh_token222222');window.dispatchEvent(new Event('storage'));},300);
 
-    document.getElementById('test22').textContent = 'yoyo';
-  
-  }
+    // window.addEventListener("message", (event) => {
+    //   document.getElementById('test22').textContent = 'yeye';
+    //   document.getElementById("refresh_token").textContent = event.data;
+    // });
 
-  setTimeout(()=>
-    document.getElementById("tt_token").textContent = window.sessionStorage.getItem('refresh_token')
-  ,3000)
-
-  window.addEventListener("message", (event) => {
-    document.getElementById('test22').textContent = 'yeye';
-    document.getElementById("refresh_token").textContent = event.data;
-  });
-
-  window.addEventListener("storage", (e) => {
-    document.getElementById('test22').textContent = 'yeye';
-    alert(2);
-  document.getElementById("access_token").textContent = window.sessionStorage.getItem('access_token')}
+    window.addEventListener("storage", (e) => {
+      console.log("storage is triggered");
+      document.getElementById("access_token").textContent = window.sessionStorage.getItem('access_token');
+      document.getElementById("refresh_token").textContent = window.sessionStorage.getItem('refresh_token');
+    }
     );
 
-  // ...
-
-
-// var x = document.getElementById("demo");
-
-// function getLocation() {
-//   alert(navigator.geolocation)
-//   if (navigator.geolocation) {
-//     try{
-//       navigator.geolocation.getCurrentPosition(showPosition);
-//     } catch(e){
-//       alert(e)
-//       console.dir(e)
-//     }
-    
-//   } else { 
-//     alert("Geolocation is not supported by this browser.");
-//     x.innerHTML = "Geolocation is not supported by this browser.";
-//   }
-// }
-
-// function showPosition(position) {
-//   alert("Latitude: " + position.coords.latitude + ",Longitude: "+ position.coords.longitude)
-//   x.innerHTML = "Latitude: " + position.coords.latitude + 
-//   "<br>Longitude: " + position.coords.longitude;
-// }
-</script>
+  </script>
 
 </body>
+
 </html>
