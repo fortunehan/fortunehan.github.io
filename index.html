@@ -29,8 +29,13 @@
   <br />
   <br />
   <button onclick="setToken()">set access_token</button>
+  <button onclick="exit()">exit</button>
 
   <script>
+    function exit(){
+      velocity.postMessage("exit");
+    }
+
     function setToken() {
       window.sessionStorage.setItem("access_token", "access token 1111111111");
       window.sessionStorage.setItem("refresh_token", "refresh token 2222222");
