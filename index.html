@@ -2,37 +2,27 @@
 <html>
 
 <body>
-
-  <!-- <p>Click the button to get your c==1aaaardinates.</p>
-
-<button onclick="getLocation()">Try It</button> -->
-
-  <!-- <p id="demo"></p> -->
   <br />
   <br />
   <br />
   <br />
   <br />
   <br />
-  <span>access_token: </span> <span id="access_token"> </span>
-  <span>refresh_token: </span> <span id="refresh_token"> </span>
-  <span>tt_token: </span> <span id="tt_token"> </span>
-
+  <div>
+    access_token: <span id="access_token"> </span>
+  </div>
+  <div>
+    refresh_token: <span id="refresh_token"> </span>
+  </div>
   <br />
   <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <span>test: </span> <span id="test"> </span>
-  <span>test66: </span> <span id="test22"> </span>
-  <br />
-  <br />
-  <button onclick="setToken()">set access_token</button>
-  <button onclick="exit()">exit</button>
+  <div>
+    <!-- <button onclick="setToken()">set access_token</button> -->
+    <button onclick="exit()">exit</button>
+  </div>
 
   <script>
-    function exit(){
+    function exit() {
       velocity.postMessage("exit");
     }
 
@@ -40,15 +30,7 @@
       window.sessionStorage.setItem("access_token", "access token 1111111111");
       window.sessionStorage.setItem("refresh_token", "refresh token 2222222");
       window.dispatchEvent(new Event('storage'));
-      // document.getElementById('tt_token').textContent = window.sessionStorage.getItem('tt_token');
     }
-
-    // setTimeout(()=>{window.sessionStorage.setItem('access_token', 'access_token11111111');window.sessionStorage.setItem('refresh_token', 'refresh_token222222');window.dispatchEvent(new Event('storage'));},300);
-
-    // window.addEventListener("message", (event) => {
-    //   document.getElementById('test22').textContent = 'yeye';
-    //   document.getElementById("refresh_token").textContent = event.data;
-    // });
 
     window.addEventListener("storage", (e) => {
       console.log("storage is triggered");
